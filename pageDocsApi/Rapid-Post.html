@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)https://rapid-post.com/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>
+    Rapid-Post </title>
+  <meta name="keyword" content="Rapid-Post ">
+  <meta name="description" content="Rapid-Post ">
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--    <link rel="stylesheet" type="text/css" href="css/style.css">-->
+  <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+  <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+  <!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">-->
+
+  <!--[if lt IE 7]><style media="all" type="text/css">@import "{$site_url}/templates/css/ie_style.css";</style><![endif]-->
+
+  <link rel="icon" href="https://rapid-post.com/assets/img/favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="./Rapid-Post_files/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./Rapid-Post_files/ionicons.min.css" rel="stylesheet">
+  <link href="./Rapid-Post_files/style.css" rel="stylesheet">
+  <link href="./Rapid-Post_files/css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    var site_url = "{$site_url}";
+  </script>
+  <!-- <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script language="JavaScript" src="/js/ajax.js"></script>
+<script type="text/javascript" src="/js/jquery-1.4.2.min.js"> </script>
+<script type="text/javascript" src="/js/tabs/Jquery-tabs.js"> </script>
+<script language="JavaScript" src="/js/validation.js"></script>	
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/ie_style.css" type="text/css">-->
+
+
+  <script type="text/javascript">
+    function validate() {
+
+      if (document.login_form.uname.value == '' || document.login_form.password.value == '') {
+        alert("Invalid username and/or password.");
+        return false;
+      } else return true;
+    }
+
+    function valid_register() {
+      if (document.registration_form.loginname.value == '') {
+        alert("Invalid username");
+        return false;
+      } else if (document.registration_form.password.value == '') {
+        alert("Invalid password");
+        return false;
+      } else if (document.registration_form.cpassword.value == '') {
+        alert("Invalid conform Password");
+        return false;
+      } else if (document.registration_form.cpassword.value != document.registration_form.password.value) {
+        alert("Password and Conform Password Must be same.");
+        return false;
+      } else if (document.registration_form.company.value == '') {
+        alert("Company name should not leave blank");
+        return false;
+      } else if (document.registration_form.city.value == '') {
+        alert("city name should not leave blank");
+        return false;
+      } else if (document.registration_form.mobile.value == '') {
+        alert("mobile number should not leave blank");
+        return false;
+      } else if (document.registration_form.mobile.value != '') {
+        var strValue = document.registration_form.mobile.value;
+        var objRegExp = /(^-?\d\d*$)/;
+        if (!objRegExp.test(strValue)) {
+          alert("mobile number should be numeric");
+          return false;
+        }
+      } else return true;
+    }
+
+    function trakvalid() {
+
+      if (document.tracknow.trackno.value == '') {
+        alert("enter consinment number.");
+        return false;
+      } else return true;
+    }
+  </script>
+
+  <style type="text/css">
+    .text_shedow {
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #000, 1px 1px 0 #fff;
+      color: #FFF;
+    }
+  </style>
+  <style></style>
+</head>
+
+<body style="">
+  <!--header start -->
+
+  <header class="header">
+
+
+    <div class="container">
+
+      <div class="row d-flex">
+
+        <div class="logo"><a href="https://rapid-post.com/"><img
+              src="./Rapid-Post_files/logo14277135201445235145148375088416320254831651911622.png"
+              alt="Eagle Express"></a></div>
+
+        <div class="header-menu">
+
+
+          <ul>
+            <li><a href="https://rapid-post.com/">Home</a></li>
+            <li><a href="https://rapid-post.com/services">Services</a></li>
+            <li><a href="https://rapid-post.com/#about-us" id="about-us-btn">About us</a></li>
+            <li><a href="https://rapid-post.com/contacts">Contacts</a></li>
+          </ul>
+
+
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </header>
+
+
+  <div id="h">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 centered">
+          <h1><strong>Track Now</strong>(Consignment No)</h1>
+          <h2>
+          </h2>
+          <h2 style="color:;" class="text_shedow">
+          </h2>
+          <div class="mtb">
+            <form name="tracknow" method="post" action="https://rapid-post.com//?show=trackshipment_status#track">
+              <input type="text" name="trackno" class="subscribe-input" style="color:#000 !important;"
+                placeholder="Enter your AWB or Shipment Number Here....">
+              <button class="btn btn-conf btn-green" type="submit" name="track" onclick="return trakvalid();"><strong
+                  style="font-size:18px;">Track Now</strong></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
+  </div>
+
+  <!--header end --><!--body start -->
+  <div id="body">
+    <table width="100%" border="0" cellspacing="5" cellpadding="5">
+      <tbody>
+        <tr>
+          <td>
+            <!--right panel start -->
+
+            <div class="container ptb">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 id="about-us">About Us</h2>
+                  <p class="mt">Worldwide Shipping Company since 1998 EAGLE COURIER LIMITED(LLC) is an independent
+                    privately owned freight forwarding, logistics management and international shipping company, that
+                    provides exceptional services to commercial clients, private individuals and agents worldwide. EAGLE
+                    COURIER LIMITED(LLC) is one of the leading international providers of worldwide air, land and sea
+                    freight. EAGLE COURIER LIMITED(LLC) was formed in 1998, and after 16 years of operation we now have
+                    offices in Kazakhstan and Italy. This has enabled our company to focus not only on sales and
+                    customer services, but also supervising of cargo loading/unloading. We offer our clients low-cost
+                    and high quality sea freight and logistic solutions both on import and export to all over the globe.
+                    We have a wide range of clients in different sectors and understand each client is unique with
+                    individual requirements. For this reason, we recruit the best individuals throughout the industry.
+                    EAGLE COURIER LIMITED(LLC) is a freight forwarder and logistics provider with a proven track record
+                    of high profile shipments throughout the globe. Our network of freight forwarding professionals
+                    expertly handle air and ocean cargo in one seamless transaction. We are the in house forwarder for
+                    global businesses who require a streamlined import-export shipping process and superior customer
+                    service that is available 24/7. Whether your business is shipping pallets of goods or oversize
+                    industrial machinery, World Class Shipping has been the go to forwarder for companies needing a
+                    freight forwarder with a stellar portfolio of complex moves.
+                    All shipments are processed in person during a visit to the office, online registration of the
+                    parcel is temporarily technically not available.</p>
+                  <p class="store">
+                    <a href="http://bit.ly/courierv1-androidapp" target="_blank"><img
+                        src="./Rapid-Post_files/google-play.png" height="50" alt="">Download our FREE Android App</a>
+                  </p>
+                </div>
+              </div><!--/row-->
+            </div><!--/container-->
+
+            <div id="sep">
+              <div class="container">
+                <div class="row centered">
+                  <div class="col-md-12">
+                    <h1>Our Services</h1>
+
+                    <div class="col-md-4">
+                      <h2>Standred Service</h2>
+                      <p class="white">EAGLE COURIER LIMITED(ECL) is a freight forwarder and logistics provider with a
+                        proven track record of high profile shipments throughout the globe. Our network of freight
+                        forwarding professionals expertly handle air and ocean cargo in one seamless transaction.
+
+                        We are the in house forwarder for global...</p>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                      <h2>Express Service</h2>
+                      <p class="white">As your international freight forwarder, we ship your products and commodities
+                        across the globe with the utmost care, in one seamless transaction. We provide global logistics
+                        services for wide ranges of cargo, from full ocean containers, to oversize project cargo, to
+                        full aircraft charters, to livestock....</p>
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                      <h2>Discreet worldwide</h2>
+                      <p class="white">We Work with the Biggest &amp; Best Parcel Couriers
+                        If you?re looking for cheap parcel deliveries but don?t want to compromise on quality or
+                        reliability, look no further than EAGLE COURIER LIMITED(ECL)
+
+                        We?ve earned a strong reputation among our customers for efficient UK parcel delivery; we?ve...
+                      </p>
+                    </div>
+
+
+
+
+
+
+                  </div><!--/col-md-8-->
+                </div>
+              </div>
+            </div><!--/sep-->
+
+            <!--/container-->
+
+
+
+
+            <div id="g">
+              <div class="container">
+                <div class="row sponsor centered">
+
+                  <div class="col-sm-2 col-sm-offset-1">
+                    <a href="http://www.dhl.com/" target="_blank"> <img
+                        src="./Rapid-Post_files/UPS_hire_100K_116258321711651908171.jpg"
+                        style="max-width:240px; max-height:75px;" alt=""></a>
+                  </div>
+
+
+                  <div class="col-sm-2 col-sm-offset-1">
+                    <a href="http://www.yodel.com/" target="_blank"> <img
+                        src="./Rapid-Post_files/Fedex-express-car16258320241651908235.png"
+                        style="max-width:240px; max-height:75px;" alt=""></a>
+                  </div>
+
+
+                  <div class="col-sm-2 col-sm-offset-1">
+                    <a href="http://www.fedex.com/" target="_blank"> <img
+                        src="./Rapid-Post_files/QRZSLQNVIZI6VILBDJDAV34ZVA-216258315251651908339.jpg"
+                        style="max-width:240px; max-height:75px;" alt=""></a>
+                  </div>
+
+
+                  <div class="col-sm-2 col-sm-offset-1">
+                    <a href="http://www.tnt.com/" target="_blank"> <img src="./Rapid-Post_files/client131428055533.png"
+                        style="max-width:240px; max-height:75px;" alt=""></a>
+                  </div>
+
+
+                </div><!--/row-->
+              </div>
+            </div><!--/g-->
+
+            <div id="green">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 centered">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item">
+                          <h3>EAGLE COURIER LIMITED has been a great asset for me and I really appreciate having not
+                            only the affordable shipping opportunities but also the cash back. I have had a few
+                            challenges recently with getting cash back on larger purchases!! Germany..</h3>
+                          <h5>
+                            <tgr>DAVID JHONSON</tgr>
+                          </h5>
+                        </div>
+                        <div class="item">
+                          <h3>I am upgrading my initial rating based on the quick response to my request. They applied
+                            the missing rebate without hesitation. I appreciate their customer service doing their job
+                            well and treating me like a valued customer. TEXAS..</h3>
+                          <h5>
+                            <tgr>LISA SMITH</tgr>
+                          </h5>
+                        </div>
+                        <div class="item active">
+                          <h3>Underpinned by world-class technology and innovation EAGLE COURIER LIMITED. offers a
+                            powerful solution for international freight delivery, warehousing and distribution solutions
+                            to help businesses grow. With the best people in the industry, EAGLE COURIER LIMITED ensures
+                            global brands benefit from a distribution chain with worldwide reach via an unrivalled
+                            multimodal transport portfolio. Sustainability is vital to the way we operate and is central
+                            to our growth. RAPID CARGO MOVERS LIMITED pioneering solutions, powered by technology and
+                            innovation, allows customers to benefit from a swift, smart and efficient service. Our
+                            continual investment in market-leading infrastructure, technology and skills means we are
+                            dedicated to reducing energy, slashing emissions and cutting freight miles. UK..</h3>
+                          <h5>
+                            <tgr>MARK LAWRENCE</tgr>
+                          </h5>
+                        </div>
+                      </div>
+                    </div><!--/Carousel-->
+
+                  </div>
+                </div><!--/row-->
+              </div><!--/container-->
+            </div><!--/green-->
+
+
+
+
+
+            <!--right panel end -->
+            <!--body end -->
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+
+    <div id="f">
+      <div class="container">
+        <div class="row centered">
+          <h2>You Can Contact Us</h2>
+          <p class=" white">Eagle Courier Services<br>
+            Kazakhstan, Almaty, Kabdolova 1/4<br>
+            Mob: +77721114499</p>
+          <h5><a href="mailto:Info@rapid-post.com">Info@rapid-post.com</a></h5>
+
+          <h6 class="mt">EAGLE EXPRESS 1998-2022</h6>
+
+        </div><!--/row-->
+      </div><!--/container-->
+    </div>
+
+
+    <script src="./Rapid-Post_files/jquery.min.js.Без названия"></script>
+    <script src="./Rapid-Post_files/bootstrap.min.js.Без названия"></script>
+    <script src="./Rapid-Post_files/retina-1.1.0.js.Без названия"></script>
+
+
+    <script>
+
+      $(document).ready(function () {
+
+        $('.contact-form').submit(function () {
+
+          var data = $('.contact-form').serialize();
+          $.ajax({
+            url: '/forms/request/send.php',
+            type: 'POST',
+            data: data,
+            beforeSend: function () {
+              $('#submit').text('Sending...');
+            },
+            success: function (res) {
+
+              if (res == 'success') {
+                $(".col-form h4").append('<span class=contact-form-succes>Thank you! check your mail</span>');
+                $('.contact-form').find('input:not(#submit), textarea').val('');
+                $('#submit').text('Send');
+              } else {
+                $('#submit').text('Send');
+                alert('Error');
+              }
+            },
+            error: function () {
+              alert('Error');
+            }
+          });
+
+
+          return false;
+        });
+
+
+
+        $('.order-form').submit(function () {
+
+          var data = $('.order-form').serialize();
+          $.ajax({
+            url: '/forms/order/send.php',
+            type: 'POST',
+            data: data,
+            beforeSend: function () {
+              $('#submit').text('Sending...');
+            },
+            success: function (res) {
+              if (res == 'success') {
+                $(".order-form").append('<span class="contact-form-succes order-form-succes">Thank you! We will contact you shortly</span>');
+                $('.order-form').find('input:not(#submit), textarea').val('');
+                $('#submit').text('Send');
+              } else {
+                $('#submit').text('Send');
+                alert('Error');
+              }
+            },
+            error: function () {
+              alert('Error');
+            }
+          });
+
+
+          return false;
+        });
+
+
+        $("#about-us-btn").click(function () {
+          $('html, body').animate({
+            scrollTop: $("#about-us").offset().top - 100
+          }, 1000);
+        });
+
+        if (window.location.hash) {
+
+          $('html, body').animate({
+            scrollTop: $("#about-us").offset().top - 100
+          }, 1000);
+
+        }
+
+
+      });
+
+    </script>
+
+
+
+
+  </div>
+</body>
+
+</html>
